@@ -6,9 +6,11 @@ authors = ["David Dansby <39511285+DataDavD@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+Django = "^3.2.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
+mypy = "^0.910"
 
 [build-system]
 requires = ["poetry==1.1.7"]
