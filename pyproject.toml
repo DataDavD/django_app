@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "django_walk"
+version = "0.1.0"
+description = "First Django app tutorial; https://docs.djangoproject.com/en/3.2/intro/tutorial01/"
+authors = ["David Dansby <39511285+DataDavD@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry==1.1.7"]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 100
+indent = '    '
+known_third_party = ["pytest"]
+known_first_party = ["django_walk"]
+
+[tool.pytest.ini_options]
+testpaths = ["test", "tests"]
+
+# coverage
+[tool.coverage.paths]
+source = ["django_walk"]
+
+[tool.coverage.run]
+branch = true
+source = ["django_walk"]
