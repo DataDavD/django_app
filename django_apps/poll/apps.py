@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 class PollConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'django_apps.poll'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "django_apps.poll"
