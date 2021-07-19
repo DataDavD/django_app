@@ -8,6 +8,7 @@ authors = ["David Dansby <39511285+DataDavD@users.noreply.github.com>"]
 python = "^3.9"
 Django = "^3.2.5"
 
+
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
 mypy = "^0.910"
@@ -39,7 +40,7 @@ exclude = '''
 
 [tool.isort]
 multi_line_output = 3
-include_trailing_comma = true
+#include_trailing_comma = true
 force_grid_wrap = 0
 use_parentheses = true
 line_length = 100
