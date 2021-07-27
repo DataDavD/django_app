@@ -7,6 +7,7 @@ authors = ["David Dansby <39511285+DataDavD@users.noreply.github.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 Django = "^3.2.5"
+pre-commit = "^2.13.0"
 
 
 [tool.poetry.dev-dependencies]
