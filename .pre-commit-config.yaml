@@ -20,7 +20,7 @@ repos:
         name: mypy
         stages: [commit]
         language: system
-        entry: poetry run mypy --ignore-missing-imports --no-strict-optional .
+        entry: poetry run mypy --follow-imports=error --ignore-missing-imports --no-strict-optional .
         types: [python]
         pass_filenames: false
 #  - repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
