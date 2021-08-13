@@ -29,14 +29,13 @@ ALLOWED_HOSTS: list = []
 # Application definition
 
 INSTALLED_APPS = [
+    "django_apps.poll.apps.PollConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "django_apps.poll.apps.PollConfig",
-    # "django_apps.poll",
 ]
 
 MIDDLEWARE = [
@@ -54,7 +53,7 @@ ROOT_URLCONF = "django_walk.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "./templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
